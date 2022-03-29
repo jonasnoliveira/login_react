@@ -1,8 +1,11 @@
+import { useState } from "react";
 import './App.css';
-import criarConta from './criarConta'
 import jbLogo from './assets/logo_sem_fundo.png';
 
 function App() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div className='container'>
       <div className='container-login'>
@@ -16,12 +19,22 @@ function App() {
             </span>
 
             <div class='wrap-input'>
-              <input className='input' type='email' />
+              <input
+                className={email !== "" ? 'has-val input' : 'input'}
+                type='email'
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+              />
               <span className='focus-input' data-placeholder='Email'></span>
             </div>
 
             <div class='wrap-input'>
-              <input className='input' type='password' />
+              <input
+                className={password !== '' ? 'has-val input' : 'input'}
+                type='password'
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+              />
               <span className='focus-input' data-placeholder='Password'></span>
             </div>
 
