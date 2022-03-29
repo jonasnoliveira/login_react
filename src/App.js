@@ -1,4 +1,4 @@
-import './App.css';git
+import './App.css';
 import criarConta from './criarConta'
 import jbLogo from './assets/logo_sem_fundo.png';
 
