@@ -134,7 +134,7 @@ login-form{
 }
 
 .input:focus + .focus-input::after{
-  top: -15px;
+  top: -18px;
 }
 
 .input:focus + .focus-input::before{
@@ -142,7 +142,7 @@ login-form{
 }
 
 .has-val + .focus-input::after {
-  top: -15px;
+  top: -18px;
 }
 
 .has-val + .focus-input::before {
