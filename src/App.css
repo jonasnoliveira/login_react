@@ -197,7 +197,7 @@ login-form{
 
 .txt2{
   font-size: 14px;
-  color: var(--blue--);
+  color: var(--marsala--);
   line-height: 1.2;
   text-decoration: none;
 }
@@ -226,7 +226,7 @@ login-form{
   }
   
   .wrap-login{
-    width: 90vw;
+    width: 85vw;
     background: var(--ligth--);
     border-radius: 15px;
   
@@ -248,7 +248,7 @@ login-form{
   }
   
   .login-form-title img{
-    width: 10vw;
+    width: 40vw;
   }
   
   .wrap-input{
