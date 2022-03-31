@@ -1,7 +1,7 @@
-import './App.css';
-import jbLogo from './assets/logo.png';
+import '../App.css';
+import jbLogo from '../assets/logo.png';
 
-function criarConta() {
+function CriarConta() {
     return(
         <div className='container'>
       <div className='container-login'>
@@ -30,7 +30,7 @@ function criarConta() {
 
             <div class="text-center">
               <span className='txt1'>Não possui conta?</span>
-              <a className='txt2' href={criarConta}>Criar conta.</a>
+              <a className='txt2' href="https://www.youtube.com/watch?v=9pB_lwmLc74">Criar conta.</a>
             </div>
           </form>
         </div>
@@ -39,4 +39,4 @@ function criarConta() {
     )
 }
 
-export default criarConta;
+export default CriarConta;

@@ -202,7 +202,7 @@ login-form{
   text-decoration: none;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
   .container{
     width: 100vw;
     margin: 0 auto;
@@ -226,7 +226,7 @@ login-form{
   }
   
   .wrap-login{
-    width: 85vw;
+    width: 35vw;
     background: var(--ligth--);
     border-radius: 15px;
   
@@ -248,7 +248,7 @@ login-form{
   }
   
   .login-form-title img{
-    width: 40vw;
+    width: 20vw;
   }
   
   .wrap-input{
@@ -380,7 +380,8 @@ login-form{
     margin-top: 35px;
   }
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 720px) {
   .container{
     width: 100vw;
     margin: 0 auto;
@@ -404,7 +405,7 @@ login-form{
   }
   
   .wrap-login{
-    width: 35vw;
+    width: 85vw;
     background: var(--ligth--);
     border-radius: 15px;
   
@@ -426,7 +427,7 @@ login-form{
   }
   
   .login-form-title img{
-    width: 20vw;
+    width: 40vw;
   }
   
   .wrap-input{

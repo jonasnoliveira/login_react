@@ -1,13 +1,12 @@
 import { useState } from "react";
-import './App.css';
-import jbLogo from './assets/logo_sem_fundo.png';
+import '../App.css';
+import jbLogo from '../assets/logo_sem_fundo.png';
 
-function App() {
+function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   return (
-
     <div className='container'>
       <div className='container-login'>
         <div className='wrap-login'>
@@ -54,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
