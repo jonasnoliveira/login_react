@@ -18,7 +18,7 @@ const Login = () =>{
               Login
             </span>
             <span className='login-form-title code-logo'>
-              <img src={codeLogo} alt='Code Logo' />
+              <img src={jbLogo} alt='Code Logo' />
             </span>
 
             <div class='wrap-input'>
@@ -47,7 +47,7 @@ const Login = () =>{
 
             <div class="text-center">
               <span className='txt1'>Não possui conta?</span>
-              <Link className='txt2' to='./CriarConta'>Criar Conta.</Link>
+              <Link className='txt2' to='./CriarConta'>Clique aqui!</Link>
             </div>
           </form>
         </div>

@@ -68,7 +68,7 @@ const CriarConta = () =>{
 
             <div class="text-center">
               <span className='txt1'>Possui conta?</span>
-              <Link className='txt2' to='/'>Entrar!</Link>
+              <Link className='txt2' to='/'>Clique aqui!</Link>
             </div>
           </form>
         </div>
