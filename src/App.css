@@ -1,8 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --blue--: #0D6EFD;
   --ligth--: #F0F8FF;
@@ -10,7 +11,7 @@
   --marsala--: #581d22;
 }
 
-.container{
+.container {
   width: 100vw;
   margin: 0 auto;
   flex-direction: row;
@@ -18,7 +19,7 @@
   align-items: center;
 }
 
-.container-login{
+.container-login {
   width: 100vw;
   min-height: 100vh;
 
@@ -32,20 +33,20 @@
   background: var(--marsala--);
 }
 
-.wrap-login{
+.wrap-login {
   width: 20vw;
   background: var(--ligth--);
   border-radius: 15px;
 
   overflow: hidden;
-  padding: 3rem 2rem 2rem 2rem; 
+  padding: 3rem 2rem 2rem 2rem;
 }
 
-login-form{
+login-form {
   width: 100%;
 }
 
-.login-form-title{
+.login-form-title {
   display: block;
   font-size: 30px;
   color: var(--dark--);
@@ -54,22 +55,22 @@ login-form{
   text-align: center;
 }
 
-.login-form-title img{
+.login-form-title img {
   width: 10vw;
 }
 
-.login-form-title + .code-logo img{
+.login-form-title+.code-logo img {
   width: 7vw;
 }
 
-.wrap-input{
+.wrap-input {
   width: 100%;
   position: relative;
   border-bottom: 3px solid var(--dark--);
   margin-bottom: 37px;
 }
 
-.input{ 
+.input {
   font-size: 15px;
   color: var(--dark--);
   line-height: 1.2;
@@ -83,7 +84,8 @@ login-form{
 
   padding: 0 5px;
 }
-.focus-input{
+
+.focus-input {
   position: absolute;
   display: block;
   width: 100%;
@@ -96,7 +98,7 @@ login-form{
   color: var(--dark--);
 }
 
-.focus-input::before{
+.focus-input::before {
   content: '';
   display: block;
   position: absolute;
@@ -114,7 +116,7 @@ login-form{
 
 }
 
-.focus-input::after{
+.focus-input::after {
   font-size: 15px;
   color: var(--dark--);
   line-height: 1.2;
@@ -134,34 +136,34 @@ login-form{
   transition: all 0.4s;
 }
 
-.input:focus{
+.input:focus {
   outline: 0;
 }
 
-.input:focus + .focus-input::after{
+.input:focus+.focus-input::after {
   top: -18px;
 }
 
-.input:focus + .focus-input::before{
+.input:focus+.focus-input::before {
   width: 100%;
 }
 
-.has-val + .focus-input::after {
+.has-val+.focus-input::after {
   top: -18px;
 }
 
-.has-val + .focus-input::before {
+.has-val+.focus-input::before {
   width: 100%;
 }
 
-.container-login-form-btn{
+.container-login-form-btn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 15px;
 }
 
-.login-form-btn{
+.login-form-btn {
   font-size: 15px;
   border: none;
   border-radius: 10px;
@@ -178,12 +180,12 @@ login-form{
 
 }
 
-.login-form-btn:hover{
+.login-form-btn:hover {
   cursor: pointer;
   opacity: 0.9;
 }
 
-.text-center{
+.text-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,7 +193,7 @@ login-form{
   margin-top: 35px;
 }
 
-.txt1{
+.txt1 {
   font-size: 14px;
   color: var(--dark--);
   line-height: 1.2;
@@ -199,7 +201,7 @@ login-form{
   padding-right: 8px;
 }
 
-.txt2{
+.txt2 {
   font-size: 14px;
   color: var(--marsala--);
   line-height: 1.2;
@@ -207,89 +209,94 @@ login-form{
 }
 
 @media (max-width: 1024px) {
-  .container{
+  .container {
     width: 100vw;
     margin: 0 auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  
-  .container-login{
+
+  .container-login {
     width: 100vw;
     min-height: 100vh;
-  
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  
+
     padding: 10px;
-  
+
     background: var(--marsala--);
   }
-  
-  .wrap-login{
+
+  .wrap-login {
     width: 35vw;
     background: var(--ligth--);
     border-radius: 15px;
-  
+
     overflow: hidden;
-    padding: auto; 
+    padding: auto;
   }
-  
-  login-form{
+
+  login-form {
     width: 100%;
   }
-  
-  .login-form-title{
+
+  .login-form-title {
     display: block;
     font-size: 30px;
     color: var(--dark--);
-  
+
     line-height: 1.2;
     text-align: center;
   }
-  
-  .login-form-title img{
+
+  .login-form-title img {
     width: 20vw;
   }
-  
-  .wrap-input{
+
+  .login-form-title+.code-logo img {
+    width: 10vw;
+  }
+
+  .wrap-input {
     width: 100%;
     position: relative;
     border-bottom: 3px solid var(--dark--);
     margin-bottom: 37px;
   }
-  
-  .input{ 
+
+  .input {
     font-size: 15px;
     color: var(--dark--);
     line-height: 1.2;
     border: none;
     display: block;
-  
+
     width: 100%;
     height: 45px;
-  
+
     background-color: transparent;
-  
+
     padding: 0 5px;
   }
-  .focus-input{
+
+  .focus-input {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
-  
+
     top: 0;
     left: 0;
-  
+
     pointer-events: none;
     color: var(--dark--);
   }
-  
-  .focus-input::before{
+
+  .focus-input::before {
     content: '';
     display: block;
     position: absolute;
@@ -297,69 +304,69 @@ login-form{
     left: 0;
     width: 0;
     height: 2px;
-  
+
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-  
+
     background: var(--marsala--);
-  
+
   }
-  
-  .focus-input::after{
+
+  .focus-input::after {
     font-size: 15px;
     color: var(--dark--);
     line-height: 1.2;
-  
+
     content: attr(data-placeholder);
     display: block;
     width: 100%;
     position: absolute;
     top: 16px;
     left: 0px;
-  
+
     padding-left: 5px;
-  
+
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
-  
-  .input:focus{
+
+  .input:focus {
     outline: 0;
   }
-  
-  .input:focus + .focus-input::after{
+
+  .input:focus+.focus-input::after {
     top: -18px;
   }
-  
-  .input:focus + .focus-input::before{
+
+  .input:focus+.focus-input::before {
     width: 100%;
   }
-  
-  .has-val + .focus-input::after {
+
+  .has-val+.focus-input::after {
     top: -18px;
   }
-  
-  .has-val + .focus-input::before {
+
+  .has-val+.focus-input::before {
     width: 100%;
   }
-  
-  .container-login-form-btn{
+
+  .container-login-form-btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 15px;
   }
-  
-  .login-form-btn{
+
+  .login-form-btn {
     font-size: 15px;
     border: none;
     border-radius: 10px;
     color: var(--ligth--);
-  
+
     line-height: 1.2;
     text-transform: uppercase;
     display: flex;
@@ -368,107 +375,112 @@ login-form{
     width: 100%;
     height: 50px;
     background-color: var(--marsala--);
-  
+
   }
-  
-  .login-form-btn:hover{
+
+  .login-form-btn:hover {
     cursor: pointer;
     opacity: 0.9;
   }
-  
-  .text-center{
+
+  .text-center {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     margin-top: 35px;
   }
 }
 
 @media (max-width: 720px) {
-  .container{
+  .container {
     width: 100vw;
     margin: 0 auto;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  
-  .container-login{
+
+  .container-login {
     width: 100vw;
     min-height: 100vh;
-  
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  
+
     padding: 10px;
-  
+
     background: var(--marsala--);
   }
-  
-  .wrap-login{
+
+  .wrap-login {
     width: 85vw;
     background: var(--ligth--);
     border-radius: 15px;
-  
+
     overflow: hidden;
-    padding: auto; 
+    padding: auto;
   }
-  
-  login-form{
+
+  login-form {
     width: 100%;
   }
-  
-  .login-form-title{
+
+  .login-form-title {
     display: block;
     font-size: 30px;
     color: var(--dark--);
-  
+
     line-height: 1.2;
     text-align: center;
   }
-  
-  .login-form-title img{
+
+  .login-form-title img {
     width: 40vw;
   }
-  
-  .wrap-input{
+
+  .login-form-title + .code-logo img {
+    width: 20vw;
+  }
+
+  .wrap-input {
     width: 100%;
     position: relative;
     border-bottom: 3px solid var(--dark--);
     margin-bottom: 37px;
   }
-  
-  .input{ 
+
+  .input {
     font-size: 15px;
     color: var(--dark--);
     line-height: 1.2;
     border: none;
     display: block;
-  
+
     width: 100%;
     height: 45px;
-  
+
     background-color: transparent;
-  
+
     padding: 0 5px;
   }
-  .focus-input{
+
+  .focus-input {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
-  
+
     top: 0;
     left: 0;
-  
+
     pointer-events: none;
     color: var(--dark--);
   }
-  
-  .focus-input::before{
+
+  .focus-input::before {
     content: '';
     display: block;
     position: absolute;
@@ -476,69 +488,69 @@ login-form{
     left: 0;
     width: 0;
     height: 2px;
-  
+
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-  
+
     background: var(--marsala--);
-  
+
   }
-  
-  .focus-input::after{
+
+  .focus-input::after {
     font-size: 15px;
     color: var(--dark--);
     line-height: 1.2;
-  
+
     content: attr(data-placeholder);
     display: block;
     width: 100%;
     position: absolute;
     top: 16px;
     left: 0px;
-  
+
     padding-left: 5px;
-  
+
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
-  
-  .input:focus{
+
+  .input:focus {
     outline: 0;
   }
-  
-  .input:focus + .focus-input::after{
+
+  .input:focus+.focus-input::after {
     top: -18px;
   }
-  
-  .input:focus + .focus-input::before{
+
+  .input:focus+.focus-input::before {
     width: 100%;
   }
-  
-  .has-val + .focus-input::after {
+
+  .has-val+.focus-input::after {
     top: -18px;
   }
-  
-  .has-val + .focus-input::before {
+
+  .has-val+.focus-input::before {
     width: 100%;
   }
-  
-  .container-login-form-btn{
+
+  .container-login-form-btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 15px;
   }
-  
-  .login-form-btn{
+
+  .login-form-btn {
     font-size: 15px;
     border: none;
     border-radius: 10px;
     color: var(--ligth--);
-  
+
     line-height: 1.2;
     text-transform: uppercase;
     display: flex;
@@ -547,19 +559,19 @@ login-form{
     width: 100%;
     height: 50px;
     background-color: var(--marsala--);
-  
+
   }
-  
-  .login-form-btn:hover{
+
+  .login-form-btn:hover {
     cursor: pointer;
     opacity: 0.9;
   }
-  
-  .text-center{
+
+  .text-center {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     margin-top: 35px;
   }
 }
