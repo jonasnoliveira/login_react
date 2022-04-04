@@ -1,8 +1,11 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 import '../App.css';
 import jbLogo from '../assets/logo_sem_fundo.png';
+import codeLogo from '../assets/logo.png'
 
-function Login() {
+const Login = () =>{
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -14,8 +17,8 @@ function Login() {
             <span className='login-form-title'>
               Login
             </span>
-            <span className='login-form-title'>
-              <img src={jbLogo} alt='JB Logo' />
+            <span className='login-form-title code-logo'>
+              <img src={codeLogo} alt='Code Logo' />
             </span>
 
             <div class='wrap-input'>
@@ -44,7 +47,7 @@ function Login() {
 
             <div class="text-center">
               <span className='txt1'>Não possui conta?</span>
-              <a className='txt2' href='./criarConta.js'>Criar conta.</a>
+              <Link className='txt2' to='./CriarConta'>Criar Conta.</Link>
             </div>
           </form>
         </div>

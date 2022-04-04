@@ -58,6 +58,10 @@ login-form{
   width: 10vw;
 }
 
+.login-form-title + .code-logo img{
+  width: 7vw;
+}
+
 .wrap-input{
   width: 100%;
   position: relative;
