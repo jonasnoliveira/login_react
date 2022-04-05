@@ -17,7 +17,7 @@ const Login = () =>{
             <span className='login-form-title'>
               Login
             </span>
-            <span className='login-form-title code-logo'>
+            <span className='login-form-title'>
               <img src={jbLogo} alt='Code Logo' />
             </span>
 
